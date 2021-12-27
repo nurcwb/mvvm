@@ -23,6 +23,7 @@ public class RepositoryProfessions {
                 ProfessionReponse professions = createResponse();
                 emitter.onNext(professions);
             }
+//        }).subscribeOn(Schedulers.newThread());
         }).delay(3, TimeUnit.SECONDS).subscribeOn(Schedulers.newThread());
     }
 
